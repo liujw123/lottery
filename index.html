@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=.5, maximum-scale=.5, minimum-scale=.5, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="icon" href="./static/image/icon.png">
+  <title>My App</title>
+  <!-- built style files will be auto injected -->
+  <!-- 动态修改htmlfontsize值 -->
+  <script type="text/javascript">
+    (function (win,doc) {
+      function setSize() {
+        doc.documentElement.style.fontSize=document.documentElement.clientWidth+'px';
+      }
+      setSize();
+      win.addEventListener('resize',setSize,false)
+    })(window,document)
+</script>
+</head>
+<body>
+  <div id="app"></div>
+  <!-- built script files will be auto injected -->
+</body>
+</html>

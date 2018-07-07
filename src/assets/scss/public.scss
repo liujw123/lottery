@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+@import "reset";
+
+@function r($px){
+    @return (1rem/750px)*$px;
+}
+
+
+$theme_color:#f34234;
+$font_color:hsl(0, 0%, 20%);
+$border_color:#ebebeb;
+$white:#fff;
+$blue:#0b92e4;
+$place_color:#cccccc;
+
+// button style
+.m_button{
+    margin: r(100px) 0 r(30px);
+    width: 100%;
+    height: r(80px);
+    line-height: r(80px);
+    background-color: $theme_color;
+    border-radius: r(999px);
+}
